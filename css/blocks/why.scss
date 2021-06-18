@@ -1,0 +1,81 @@
+.why {
+  margin: rem(50px) 0;
+}
+.section__text {
+    padding: 0 26% rem(50px);
+    font-size: $FontSize;
+    line-height: rem(22px);
+    font-weight: 300;
+    @include phones{
+      padding-right: 15%;
+    }
+  }
+ 
+// иконки почему
+.features {
+  display: flex;
+  
+  @include phones {
+    flex-direction: column;
+  }
+
+  &__item {
+    flex: 1;
+    margin: 0 3%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include phones {
+      display: flex;
+      margin: 0;
+      padding-bottom: 10%;
+      margin-left: 0;
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: rem(128px);
+    height: rem(128px);
+    background: #f2f5f4;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(68px);
+    height: rem(68px);
+    transform: translate(-50%, -50%);
+  }
+  &__caption {
+    padding: rem(20px) 0;
+  }
+  &__body {
+    text-align: center;
+    @include phones {
+      padding: 0 4%;
+      text-align: left;
+    }
+  }
+  &__text{
+    @include phones{
+      padding-right: 10%;
+    }
+  }
+}
+.caption {
+  font-size: rem(27px);
+  font-weight: bold;
+  color: #292929;
+}
+ 

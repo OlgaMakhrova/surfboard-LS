@@ -1,0 +1,49 @@
+// фиксированное меню
+.fixed-menu {
+  position: fixed;
+  top: 33%;
+  right: 4%;
+  z-index: $z-index-menu;
+  &__item {
+    margin-bottom: 5px;
+    &--active {
+      .fixed-menu__link {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: rem(16px);
+    height: rem(16px);
+    border: rem(1px) solid transparent;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: rem(6px);
+      height: rem(6px);
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+  @include tablets {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: rem(5px);
+  &--active {
+    .fixed-menu__link {
+      border-color: #fff;
+    }
+  }
+}

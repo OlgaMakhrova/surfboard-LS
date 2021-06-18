@@ -1,0 +1,46 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.hero {
+  padding: rem(166px) 0 rem(68px) 0;
+  height: 100vh;
+  min-height: rem(655px);
+  background: url(../../img/arnaud.png) center no-repeat;
+  background-size: cover;
+  color: $fonts-color;
+
+  // @media screen and (min-width: 768px) {
+  //   background: url(../../img/arnaudphone.png) left no-repeat;
+    
+  // }
+
+  &__title {
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    @include fontz(rem(48px), #fff);
+    @include tablets {
+      padding: 0 5%;
+    }
+  }
+  &__subtitle {
+    margin: rem(25px) 0 rem(36px) 0;
+    width: rem(382px);
+    font-size: rem(21px);
+  }
+}
+.hero__title-section {
+  width: 51%;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    width: 100%;
+  }
+}

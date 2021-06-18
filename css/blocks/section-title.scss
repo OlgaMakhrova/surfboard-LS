@@ -1,0 +1,23 @@
+.section__title{
+ text-transform: uppercase;
+ font-size: rem(48px); 
+ font-weight: bold;
+   
+  }
+.why-title{
+  margin-bottom: rem(20px);
+  color: #292929;
+   
+ @include phones {
+      margin-bottom: rem(9px);
+    }
+  }
+ .coments-title{
+   margin-bottom: rem(32px);
+ } 
+.order-title{
+  padding: rem(60px) 0;
+  text-align: center;
+  color: $fonts-color;
+  }
+   

@@ -1,0 +1,62 @@
+$containerWidth: 940px;
+$FontSize: 18px;
+
+// color
+$btn-color: #FEDB3F;
+$fonts-color: #FFFFFF;
+
+// z-index
+$z-index-menu: 100;
+
+//миксины  title-h1,h2
+@mixin fontz($fs, $fc){
+  font-size: $fs;
+  color: $fc;
+}
+@mixin tablets{
+  @media screen and (max-width: $tablets){
+    @content;
+  }
+}
+@mixin phones{
+  @media screen and (max-width: $phones){
+    @content;
+  }
+}
+
+
+  @function rem($px) {
+  @return $px / $FontSize + 0rem;
+} 
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+@font-face {
+  font-family: 'AlegreyaSans';
+  src: url('../../fonts/AlegreyaSans-Regular.woff2') format('woff2'),
+      url('../../fonts/AlegreyaSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@import "./css/blocks/layout.scss";
+@import "./css/blocks/header.scss";
+@import "./css/blocks/menu.scss";
+@import "./css/blocks/phone.scss";
+@import "./css/blocks/burger.scss";
+@import "./css/blocks/hero.scss";
+@import "./css/blocks/hero-icon.scss";
+@import "./css/blocks/btn.scss";
+@import "./css/blocks/section-title.scss";
+@import "./css/blocks/why.scss";
+@import "./css/blocks/section.scss";
+@import "./css/blocks/coments.scss";
+@import "./css/blocks/order-section.scss";
+@import "./css/blocks/form.scss";
+@import "./css/blocks/fixed-menu.scss";
+@import "./css/blocks/media.scss";
+@import "./css/blocks/map.scss";
+@import "./css/blocks/footer.scss";

@@ -1,0 +1,28 @@
+// кнопка
+.btn {
+  padding: rem(21px) rem(41px);
+  background: $btn-color;
+  border-radius: rem(100px);
+  font-size: rem(16px);
+  font-weight: 800;
+  color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    background: #ffd517;
+  }
+  &__theme-transparent {
+    background: inherit;
+    color: $fonts-color;
+    text-transform: none;
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fedb3f;
+    }
+  }
+  @include phones {
+    font-size: rem(19px);
+  }
+}

@@ -1,0 +1,54 @@
+.footer{
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  font-size: rem(21px);
+  &__row{  
+    display: flex; 
+    padding: 0 rem(80px);
+    min-height: rem(90px);
+    background: $fonts-color;
+    color: #292929;
+    align-items: center;
+  }
+  &__column{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex: 1;
+  
+  }
+  &__phone-number{
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+.social{
+   &__list{
+  display: flex;  
+  flex: 1;
+}
+  &__item{
+  padding-right: 15px; 
+  &:last-child{
+  padding-right: 0;
+}
+  }
+  &__link{
+   display: inline-flex;
+   width: 20px;
+   height: 20px;
+  }
+.social-vk{
+  background: url(../../img/icon/vk.svg) right no-repeat;
+}
+.social-fb{
+  background: url(../../img/icon/fb.svg) right no-repeat;
+}
+.social-in{
+  background: url(../../img/icon/in.svg) right no-repeat;
+}
+.social-tw{
+  background: url(../../img/icon/tw.svg) right no-repeat;
+}
+}

@@ -1,0 +1,25 @@
+// иконки
+.hero__icon-section {
+  @include tablets {
+    display: none;
+  }
+}
+.service {
+  display: flex;
+  &__item {
+    display: flex;
+    margin-right: rem(46px);
+    font-size: rem(16px);
+    font-weight: bold;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    margin-right: rem(15px);
+    width: rem(35px);
+  }
+  &__text{
+    max-width: rem(90px);
+  }
+} 

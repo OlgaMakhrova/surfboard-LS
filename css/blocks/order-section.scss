@@ -1,0 +1,13 @@
+// закажите доску
+.order-section {
+  margin: 0 auto;
+  background: url(../../img/photo-1505459668311-8dfac7952bf0.jpg) left no-repeat;
+  background-size: cover;
+  color: $fonts-color;
+  width: 100%;
+  min-height: rem(650px);
+
+  @include tablets {
+    height: rem(970px);
+  }
+}
