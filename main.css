@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AlegreyaSans";
-  src: url("../../fonts/AlegreyaSans-Regular.woff2") format("woff2"), url("../../fonts/AlegreyaSans-Regular.woff") format("woff");
+  src: url("./fonts/AlegreyaSans-Regular.woff2") format("woff2"), url("./fonts/AlegreyaSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -225,7 +225,7 @@ footer {
   padding: 9.2222222222rem 0 3.7777777778rem 0;
   height: 100vh;
   min-height: 36.3888888889rem;
-  background: url(../../img/arnaud.png) center no-repeat;
+  background: url(./img/arnaud.png) center no-repeat;
   background-size: cover;
   color: #FFFFFF;
 }
@@ -566,7 +566,7 @@ footer {
 
 .order-section {
   margin: 0 auto;
-  background: url(../../img/photo-1505459668311-8dfac7952bf0.jpg) left no-repeat;
+  background: url(./img/photo-1505459668311-8dfac7952bf0.jpg) left no-repeat;
   background-size: cover;
   color: #FFFFFF;
   width: 100%;
@@ -708,7 +708,7 @@ footer {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../../img/icon/tick.svg) center no-repeat;
+  background: url(./img/icon/tick.svg) center no-repeat;
 }
 
 @media screen and (max-width: 768px) {
@@ -768,7 +768,7 @@ footer {
   top: 0;
   margin-top: 0;
   height: 100vh;
-  background: url(../../img/map.png) center center no-repeat;
+  background: url(./img/map.png) center center no-repeat;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -786,7 +786,7 @@ footer {
   display: flex;
   padding: 0 4.4444444444rem;
   min-height: 5rem;
-  background: #FFFFFF;
+  background: #fff;
   color: #292929;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -833,14 +833,14 @@ footer {
   height: 20px;
 }
 .social .social-vk {
-  background: url(../../img/icon/vk.svg) right no-repeat;
+  background: url(./img/icon/vk.svg) right no-repeat;
 }
 .social .social-fb {
-  background: url(../../img/icon/fb.svg) right no-repeat;
+  background: url(./img/icon/fb.svg) right no-repeat;
 }
 .social .social-in {
-  background: url(../../img/icon/in.svg) right no-repeat;
+  background: url(./img/icon/in.svg) right no-repeat;
 }
 .social .social-tw {
-  background: url(../../img/icon/tw.svg) right no-repeat;
+  background: url(./img/icon/tw.svg) right no-repeat;
 }

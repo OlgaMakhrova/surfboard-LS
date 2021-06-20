@@ -7,7 +7,7 @@
     display: flex; 
     padding: 0 rem(80px);
     min-height: rem(90px);
-    background: $fonts-color;
+    background: #fff;
     color: #292929;
     align-items: center;
   }
@@ -40,15 +40,15 @@
    height: 20px;
   }
 .social-vk{
-  background: url(../../img/icon/vk.svg) right no-repeat;
+  background: url(./img/icon/vk.svg) right no-repeat;
 }
 .social-fb{
-  background: url(../../img/icon/fb.svg) right no-repeat;
+  background: url(./img/icon/fb.svg) right no-repeat;
 }
 .social-in{
-  background: url(../../img/icon/in.svg) right no-repeat;
+  background: url(./img/icon/in.svg) right no-repeat;
 }
 .social-tw{
-  background: url(../../img/icon/tw.svg) right no-repeat;
+  background: url(./img/icon/tw.svg) right no-repeat;
 }
 }
