@@ -2,27 +2,45 @@
   position: absolute;
   bottom: 0;
   max-width: 100%;
+  background: grey;
   font-size: rem(21px);
   &__row{  
     display: flex; 
     padding: 0 rem(80px);
     min-height: rem(90px);
-    background: #fff;
+    // background: #fff;
     color: #292929;
     align-items: center;
+    @include tablets{
+      padding: rem(25px) 0;
+    }
   }
   &__column{
    display: flex;
    justify-content: flex-end;
    align-items: center;
    flex: 1;
-  
+  @include tablets{
+    flex: 0 1 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__address-item{
+    @include phones{
+      margin-bottom: 25px;
+    }
+  }
   }
   &__phone-number{
-    margin-left: 0;
+    margin: 10px 0;
     padding-left: 0;
+    @include phones{
+     text-align: center;
+    }
   }
+
 }
+
 .social{
    &__list{
   display: flex;  

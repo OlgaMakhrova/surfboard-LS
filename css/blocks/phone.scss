@@ -1,7 +1,6 @@
 .phone-number{
   display: flex;
   align-items: center;
-  margin-left: rem(25px);
   padding-left: rem(20px);
   font-size: rem(22px);
   white-space: nowrap;
@@ -17,4 +16,4 @@
    @include tablets {
   display: none;
 }
- }
+}
