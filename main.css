@@ -235,18 +235,6 @@ footer {
     margin-bottom: 2.7777777778rem;
   }
 }
-.hero__title {
-  font-weight: bold;
-  line-height: 1.2;
-  text-transform: uppercase;
-  font-size: 2.6666666667rem;
-  color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .hero__title {
-    padding: 0 5%;
-  }
-}
 .hero__subtitle {
   margin: 1.3888888889rem 0 2rem 0;
   width: 21.2222222222rem;
@@ -339,10 +327,33 @@ footer {
   }
 }
 
+.hero__title {
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 2.6666666667rem;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 2.2222222222rem;
+  }
+}
+
 .section__title {
   text-transform: uppercase;
   font-size: 2.6666666667rem;
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2.2222222222rem;
+  }
 }
 
 .why-title {

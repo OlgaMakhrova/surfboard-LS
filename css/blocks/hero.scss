@@ -23,16 +23,6 @@
   //   background: url(../../img/arnaudphone.png) left no-repeat;
     
   // }
-
-  &__title {
-    font-weight: bold;
-    line-height: 1.2;
-    text-transform: uppercase;
-    @include fontz(rem(48px), #fff);
-    @include tablets {
-      padding: 0 5%;
-    }
-  }
   &__subtitle {
     margin: rem(25px) 0 rem(36px) 0;
     width: rem(382px);

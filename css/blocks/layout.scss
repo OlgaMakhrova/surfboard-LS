@@ -1,9 +1,9 @@
 html {
   font-size: $FontSize;
-
+  
   @include tablets {
     font-size: $FontSize - 1px;
-  }
+ }
 
   @include phones {
     font-size: $FontSize - 2px;
