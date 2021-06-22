@@ -7,14 +7,14 @@
     line-height: rem(22px);
     font-weight: 300;
     @include phones{
-      padding-right: 15%;
+      padding: 0 10%;
     }
   }
  
 // иконки почему
 .features {
   display: flex;
-  
+    
   @include phones {
     flex-direction: column;
   }

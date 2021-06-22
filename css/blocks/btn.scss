@@ -1,6 +1,6 @@
 // кнопка
 .btn {
-  padding: rem(21px) rem(41px);
+  padding: rem(20px) rem(40px);
   background: $btn-color;
   border-radius: rem(100px);
   font-size: rem(16px);
@@ -17,7 +17,7 @@
     background: inherit;
     color: $fonts-color;
     text-transform: none;
-    &:hover {
+      &:hover {
       background: rgba(0, 0, 0, 0.5);
       color: #fedb3f;
     }

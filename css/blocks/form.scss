@@ -1,8 +1,7 @@
 .form {
   display: flex;
   text-align: left;
-  height: 100vh;
-  @include tablets {
+   @include tablets {
     flex-direction: column;
     padding: 0 18%;
   }
@@ -112,6 +111,6 @@
 }
 .form__btn{
   @include tablets{
-  padding-left: rem(120px);
+  padding-left: rem(50px);
   }
 }

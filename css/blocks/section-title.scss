@@ -16,8 +16,11 @@
    margin-bottom: rem(32px);
  } 
 .order-title{
-  padding: rem(60px) 0;
+  padding-bottom: rem(50px);
   text-align: center;
   color: $fonts-color;
+  @include tablets{
+    padding-bottom: rem(25px);
+  }
   }
    

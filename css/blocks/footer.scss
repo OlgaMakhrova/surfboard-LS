@@ -6,21 +6,18 @@
   font-size: rem(21px);
   &__row{  
     display: flex; 
-    padding: 0 rem(80px);
+    padding: rem(20px) rem(80px);
     min-height: rem(90px);
-    // background: #fff;
+      // background: #fff;
     color: #292929;
     align-items: center;
-    @include tablets{
-      padding: rem(25px) 0;
-    }
   }
   &__column{
    display: flex;
    justify-content: flex-end;
    align-items: center;
    flex: 1;
-  @include tablets{
+  @include phones{
     flex: 0 1 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,7 +32,8 @@
     margin: 10px 0;
     padding-left: 0;
     @include phones{
-     text-align: center;
+    display: flex;
+    justify-content: center;
     }
   }
 

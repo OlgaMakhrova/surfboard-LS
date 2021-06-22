@@ -30,8 +30,9 @@ body ,html {
     // position: relative;
     // width: 95%;
     margin: 0 auto;
-    max-width: $containerWidth; 
     padding: 0 15px;
+    max-width: $containerWidth; 
+    height: 100%;
     
 }
 }
