@@ -176,6 +176,21 @@ footer {
   }
 }
 
+.phone-icon {
+  display: block;
+  margin-right: 0.2777777778rem;
+  width: 0.8333333333rem;
+  height: 0.8333333333rem;
+}
+
+.header__phone-icon {
+  fill: #fff;
+}
+
+.footer__phone-icon {
+  fill: #292929;
+}
+
 .burger {
   display: none;
   -webkit-box-orient: vertical;
@@ -292,6 +307,8 @@ footer {
 .service__icon {
   margin-right: 0.8333333333rem;
   width: 1.9444444444rem;
+  height: 1.9444444444rem;
+  fill: white;
 }
 .service__text {
   max-width: 5rem;
@@ -448,10 +465,11 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 3.7777777778rem;
-  height: 3.7777777778rem;
+  width: 68px;
+  height: 68px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: black;
 }
 .features__caption {
   padding: 1.1111111111rem 0;
@@ -469,6 +487,10 @@ footer {
   .features__text {
     padding-right: 10%;
   }
+}
+
+.icon-perfect {
+  width: 44px;
 }
 
 .caption {
@@ -868,7 +890,7 @@ footer {
   }
 }
 .footer__phone-number {
-  margin: 10px 0;
+  margin: 0.5555555556rem 0;
   padding-left: 0;
 }
 @media screen and (max-width: 480px) {
@@ -882,11 +904,7 @@ footer {
   }
 }
 
-.phone-icon {
-  display: block;
-  margin-right: 5px;
-  width: 15px;
-  height: 15px;
+.footer__phone-icon {
   fill: #292929;
 }
 
@@ -897,29 +915,26 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .social__item {
-  padding-right: 15px;
+  padding-right: 0.8333333333rem;
 }
 .social__item:last-child {
   padding-right: 0;
 }
-.social__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+
+.social-icon {
   width: 20px;
   height: 20px;
 }
-.social .social-vk {
-  background: url(./img/icon/vk.svg) right no-repeat;
-}
-.social .social-fb {
-  background: url(./img/icon/fb.svg) right no-repeat;
-}
-.social .social-in {
-  background: url(./img/icon/in.svg) right no-repeat;
-}
-.social .social-tw {
-  background: url(./img/icon/tw.svg) right no-repeat;
+
+.social-vk {
+  padding-top: 0.1666666667rem;
 }

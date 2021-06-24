@@ -53,9 +53,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: rem(68px);
-    height: rem(68px);
+    width: 68px;
+    height: 68px;
     transform: translate(-50%, -50%);
+    fill: black;
   }
   &__caption {
     padding: rem(20px) 0;
@@ -72,6 +73,9 @@
       padding-right: 10%;
     }
   }
+}
+.icon-perfect{
+  width: 44px;
 }
 .caption {
   font-size: rem(27px);

@@ -28,7 +28,7 @@
   }
   }
   &__phone-number{
-    margin: 10px 0;
+    margin: rem(10px) 0;
     padding-left: 0;
     @include phones{
     display: flex;
@@ -36,40 +36,30 @@
     }
   }
 }
-.phone-icon{
- display: block;
- margin-right: 5px;
- width: 15px;
- height: 15px;
-  fill: #292929;
+.footer__phone-icon{
+   fill: #292929;
 }
 
 .social{
    &__list{
   display: flex;  
   flex: 1;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
   &__item{
-  padding-right: 15px; 
+  padding-right: rem(15px); 
   &:last-child{
   padding-right: 0;
 }
-  }
-  &__link{
-   display: inline-flex;
-   width: 20px;
-   height: 20px;
-  }
+} 
+}
+
+.social-icon{
+ width: 20px;
+ height:20px;
+}
 .social-vk{
-  background: url(./img/icon/vk.svg) right no-repeat;
-}
-.social-fb{
-  background: url(./img/icon/fb.svg) right no-repeat;
-}
-.social-in{
-  background: url(./img/icon/in.svg) right no-repeat;
-}
-.social-tw{
-  background: url(./img/icon/tw.svg) right no-repeat;
-}
+  padding-top: rem(3px);
 }
