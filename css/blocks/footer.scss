@@ -2,13 +2,12 @@
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  background: grey;
   font-size: rem(21px);
   &__row{  
     display: flex; 
     padding: rem(20px) rem(80px);
     min-height: rem(90px);
-      // background: #fff;
+      background: #fff;
     color: #292929;
     align-items: center;
   }
@@ -36,7 +35,13 @@
     justify-content: center;
     }
   }
-
+}
+.phone-icon{
+ display: block;
+ margin-right: 5px;
+ width: 15px;
+ height: 15px;
+  fill: #292929;
 }
 
 .social{

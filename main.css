@@ -822,7 +822,6 @@ footer {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  background: grey;
   font-size: 1.1666666667rem;
 }
 .footer__row {
@@ -831,6 +830,7 @@ footer {
   display: flex;
   padding: 1.1111111111rem 4.4444444444rem;
   min-height: 5rem;
+  background: #fff;
   color: #292929;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -880,6 +880,14 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.phone-icon {
+  display: block;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  fill: #292929;
 }
 
 .social__list {
