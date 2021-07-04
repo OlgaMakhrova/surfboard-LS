@@ -2,22 +2,30 @@
   display: flex;
   @include tablets {
   display: none;
-}
-  &__list{
+    &__link{
+      font-size: rem(36px);
+    }
+  }
+   &__list{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+  @include tablets{   
+    position: relative;  
+     flex-direction: column;
+  } 
 }
-&__item{
+  &__item{
   margin-right: rem(25px);
   font-size: rem(17px);
   font-style: normal;
   font-weight: 400;
   white-space: nowrap;
-  // &:last-child{
-  //   margin-right: 0;
-  // }
+ @include tablets{
+   margin-right: 0;
+ }
+ }
 }
-}
+

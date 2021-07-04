@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surfboard</title>
-    <link rel="stylesheet" href="css/blocks.css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/blocks.css/normalize.css" /> -->
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
@@ -13,6 +13,9 @@
       <div class="container">
         <header class="header">
           <img src="./img/icon/logo.png" alt="surfboard" class="logo" />
+          <!-- <div class="menu__icon">
+            <span></span>
+          </div> -->
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item"><a href="#" class="menu__link"></a> О нас</li>
@@ -34,11 +37,11 @@
             </span>
             <span class="phone-number__text">8 800 903 90 90</span>
           </a>
-          <a href="" class="burger">
+          <!-- <a href="" class="burger">
             <span class="burger__plank"></span>
             <span class="burger__plank"></span>
             <span class="burger__plank"></span>
-          </a>
+          </a> -->
         </header>
       </div>
 
@@ -56,7 +59,6 @@
                   <svg class="servise-icon">
                     <use xlink:href="./sprite.svg#board"></use>
                   </svg>
-                  <!-- <img src="./img/icon/board.svg" alt="icon" /> -->
                 </div>
                 <div class="service__text">Уникальный дизайн</div>
               </li>
@@ -65,7 +67,6 @@
                   <svg class="servise-icon">
                     <use xlink:href="./sprite.svg#materials"></use>
                   </svg>
-                  <!-- <img src="./img/icon/materials.svg" alt="icon" /> -->
                 </div>
                 <div class="service__text">Прочные материалы</div>
               </li>
@@ -74,7 +75,6 @@
                   <svg class="servise-icon">
                     <use xlink:href="./sprite.svg#car"></use>
                   </svg>
-                  <!-- <img src="./img/icon/car.svg" alt="icon" /> -->
                 </div>
                 <div class="service__text">Быстрая доставка</div>
               </li>
@@ -154,46 +154,350 @@
           </ul>
         </div>
       </section>
+      <!-- слайдер доски -->
+      <section class="assortment">
+        <div class="container-assortment">
+          <div class="assortment__slider">
+            <div class="assortment__controls">
+              <a href="#" id="sliderLeft" class="assortment__control assortment__control-left">
+                <img src="./img/icon/sliderleft.svg" class="assortment__control-icon" />
+                <!-- <svg class="assortment__control-icon">
+                  <use xlink:href="./sprite.svg#sliderleft"></use>
+                </svg> -->
+              </a>
+              <a href="#" id="sliderRight" class="assortment__control assortment__control-right">
+                <img src="./img/icon/sliderright.svg" class="assortment__control-icon" alt="" />
+                <!-- <svg class="assortment__control-icon">
+                  <use xlink:href="./sprite.svg#sliderright"></use>
+                </svg> -->
+              </a>
+            </div>
+            <ul class="assortment__list" id="slider">
+              <li class="assortment__item">
+                <div class="assortment__img">
+                  <img src="./img/longboard.png" alt="longboard" />
+                </div>
+                <div class="assortment__content">
+                  <div class="assortment__composition assortment-composition">
+                    <div class="assortment-composition__button">
+                      <svg class="assortment-composition__icon">
+                        <use xlink:href="./sprite.svg#parameters"></use>
+                      </svg>
+                      <div class="assortment-compositions__title">параметры</div>
+                    </div>
+                    <ul class="assortment-composition__list">
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#length"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Длина доски</div>
+                        <div class="assortment-composition__params-text">от 2,5 м</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#width"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Ширина доски</div>
+                        <div class="assortment-composition__params-text">от 40 см</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#thickness"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Толщина</div>
+                        <div class="assortment-composition__params-text">8 см</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#lifetime"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Срок службы</div>
+                        <div class="assortment-composition__params-text">5 лет</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#weight"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Вес</div>
+                        <div class="assortment-composition__params-text">7-8 кг</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="assortment__title">Лонгборд 2.0</div>
+                  <div class="assortment__text">
+                    <p>
+                      Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
+                      разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень
+                      маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                    </p>
+                  </div>
+                  <ul class="assortment__params-list">
+                    <li class="assortment__params-item">
+                      <div class="assortment__key">Длина доски</div>
+                      <div class="assortment__value">от 2,5 метров</div>
+                    </li>
+                    <li class="assortment__params-item">
+                      <div class="assortment__key">Ширина доски</div>
+                      <div class="assortment__value">от 40 сантиметров</div>
+                    </li>
+                  </ul>
+                  <div class="assortment__footer">
+                    <div class="assortment__price">
+                      7000
+                      <span class="assortment__price-currency">₽</span>
+                    </div>
+                    <div class="assortment__button">
+                      <button class="btn">заказать</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
+              <li class="assortment__item">
+                <div class="assortment__img">
+                  <img src="./img/shortboard.png" alt="longboard" />
+                </div>
+                <div class="assortment__content">
+                  <div class="assortment__composition assortment-composition">
+                    <div class="assortment-composition__button">
+                      <svg class="assortment-composition__icon">
+                        <use xlink:href="./sprite.svg#parameters"></use>
+                      </svg>
+                      <div class="assortment-compositions__title">параметры</div>
+                    </div>
+                    <ul class="assortment-composition__list">
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#length"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Длина доски</div>
+                        <div class="assortment-composition__params-text">от 2,5 м</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#width"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Ширина доски</div>
+                        <div class="assortment-composition__params-text">от 40 см</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#thickness"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Толщина</div>
+                        <div class="assortment-composition__params-text">8 см</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#lifetime"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Срок службы</div>
+                        <div class="assortment-composition__params-text">5 лет</div>
+                      </li>
+                      <li class="assortment-composition__item">
+                        <svg class="assortment-composition__params-icon">
+                          <use xlink:href="./sprite.svg#weight"></use>
+                        </svg>
+                        <div class="assortment-composition__desc">Вес</div>
+                        <div class="assortment-composition__params-text">7-8 кг</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="assortment__title">Шортборд</div>
+                  <div class="assortment__text">
+                    <p>
+                      Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро
+                      набирать скорость, делать различные трюки на волне, включая резкие повороты и
+                      развороты, флоатеры (проезды по самому гребню волны), различные прыжки с
+                      вращениями или без, а также катание в трубах.
+                    </p>
+                  </div>
+                  <ul class="assortment__params-list">
+                    <li class="assortment__params-item">
+                      <div class="assortment__key">Длина доски</div>
+                      <div class="assortment__value">от 1,5 метров</div>
+                    </li>
+                    <li class="assortment__params-item">
+                      <div class="assortment__key">Ширина доски</div>
+                      <div class="assortment__value">от 30 сантиметров</div>
+                    </li>
+                  </ul>
+                  <div class="assortment__footer">
+                    <div class="assortment__price">
+                      12000
+                      <span class="assortment__price-currency">₽</span>
+                    </div>
+                    <div class="assortment__button">
+                      <button class="btn">заказать</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="section__title team__title">команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="./img/teamB.jpg" alt="Boris" />
+              </div>
+              <div class="team__accordion">
+                <a href="#" class="team__accordion-name"
+                  >Борис Федорович
+                  <svg class="team__icon-arrow">
+                    <use xlink:href="./sprite.svg#arrowteam"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content">
+                  <span class="team__prof">Главный технолог</span>
+                  <p>Отвечает за материалы и разработку досок</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="./img/teamO.jpg" alt="Olga" />
+              </div>
+              <div class="team__accordion">
+                <a href="#" class="team__accordion-name"
+                  >Ольга Невзорова
+                  <svg class="team__icon-arrow">
+                    <use xlink:href="./sprite.svg#arrowteam"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content">
+                  <span class="team__prof">Дизайнер</span>
+                  <p>Создает дизайн серфбордов</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="./img/teamIn.jpg" alt="Invar" />
+              </div>
+              <div class="team__accordion">
+                <a href="#" class="team__accordion-name"
+                  >Ингвар Нильсон
+                  <img src="./img/icon/arrowteam.svg" class="team__icon-arrow" alt="#" />
+                  <!-- <svg class="team__icon-arrow">
+                    <use xlink:href="./sprite.svg#arrowteam"></use>
+                  </svg> -->
+                </a>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content">
+                  <span class="team__prof">Спортсмен</span>
+                  <p>Участвует в разработке серфбордов</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="./img/teamE.jpg" alt="Ekaterina" />
+              </div>
+              <div class="team__accordion">
+                <a href="#" class="team__accordion-name"
+                  >Екатерина Иванова
+                  <svg class="team__icon-arrow">
+                    <use xlink:href="./sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content">
+                  <span class="team__prof">Тестировщик</span>
+                  <p>Отвечает за разработку новых продуктов</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- отзывы -->
       <section class="section">
         <div class="container">
           <h2 class="section__title coments-title">отзывы</h2>
           <div class="coments">
             <div class="coments__body">
-              <div class="coments__item">
-                <div class="coments__photo">
-                  <img src="./img/photo1.jpg" alt="" class="coments__photo-img" />
-                </div>
-                <article class="coments__content">
-                  <h3 class="coments__caption caption">Лучший дизайн</h3>
-                  <div class="coments__text text">
-                    <p>
-                      Я&nbsp;увидела доски на&nbsp;сайте и&nbsp;влюбилась в&nbsp;их&nbsp;дизайн.
-                      К&nbsp;летнему сезону я заказала себе доску в&nbsp;SurfBoard. Дизайнер
-                      команды&nbsp;&mdash; волшебница! Она учла все мои предпочтения
-                      и&nbsp;комментарии. В&nbsp;итоге получился прекрасный дизайн.
-                      А&nbsp;я&nbsp;катаюсь на&nbsp;доске, которая мне нравится)
-                    </p>
+              <ul class="coments__list">
+                <li class="coments__item active" data-linked-with="one">
+                  <div class="coments__photo">
+                    <img src="./img/photo1.jpg" alt="" class="coments__photo-img" />
                   </div>
-                  <div class="coments__signature">Ольга Макарова</div>
-                </article>
-              </div>
+                  <article class="coments__content">
+                    <h3 class="coments__caption caption">Лучший дизайн</h3>
+                    <div class="coments__text text">
+                      <p>
+                        Я&nbsp;увидела доски на&nbsp;сайте и&nbsp;влюбилась в&nbsp;их&nbsp;дизайн.
+                        К&nbsp;летнему сезону я заказала себе доску в&nbsp;SurfBoard. Дизайнер
+                        команды&nbsp;&mdash; волшебница! Она учла все мои предпочтения
+                        и&nbsp;комментарии. В&nbsp;итоге получился прекрасный дизайн.
+                        А&nbsp;я&nbsp;катаюсь на&nbsp;доске, которая мне нравится)
+                      </p>
+                    </div>
+                    <div class="coments__signature">Ольга Макарова</div>
+                  </article>
+                </li>
+
+                <li class="coments__item" data-linked-with="two">
+                  <div class="coments__photo">
+                    <img src="./img/photo2.jpg" alt="" class="coments__photo-img" />
+                  </div>
+                  <article class="coments__content">
+                    <h3 class="coments__caption caption">Нереальная скорость</h3>
+                    <div class="coments__text text">
+                      <p>
+                        Я занимаюсь профессиональным спортом. Доверил изготовление доски для
+                        соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях.
+                        Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы
+                        на соревнованиях!
+                      </p>
+                    </div>
+                    <div class="coments__signature">Марк Брюлов</div>
+                  </article>
+                </li>
+
+                <li class="coments__item" data-linked-with="three">
+                  <div class="coments__photo">
+                    <img src="./img/photo3.jpg" alt="" class="coments__photo-img" />
+                  </div>
+                  <article class="coments__content">
+                    <h3 class="coments__caption caption">Устойчивость и безопасность</h3>
+                    <div class="coments__text text">
+                      <p>
+                        Я заказывал доски для своих детей. Мне было важно, чтобы они были
+                        устойчивые, так как безопасность детей на первом месте. Доски были
+                        изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка.
+                        Теперь дети катаются и им нравится!
+                      </p>
+                    </div>
+                    <div class="coments__signature">Василий Поперечный</div>
+                  </article>
+                </li>
+              </ul>
             </div>
             <ul class="coments__swither">
-              <li class="coments__list">
-                <a href="#" class="coments__link">
-                  <img src="./img/avatar1.jpg" alt="" class="coments__avatar" />
+              <li class="coments__swither-item">
+                <a href="#" class="coments__swither-link" data-open="one">
+                  <img src="./img/avatar1.jpg" alt="" class="coments__swither-avatar" />
                 </a>
               </li>
-              <li class="coments__list">
-                <a href="#" class="coments__link">
-                  <img src="./img/avatar2.jpg" alt="" class="coments__avatar" />
+              <li class="coments__swither-item">
+                <a href="#" class="coments__swither-link" data-open="two">
+                  <img src="./img/avatar2.jpg" alt="" class="coments__swither-avatar" />
                 </a>
               </li>
-              <li class="coments__list">
-                <a href="#" class="coments__link">
-                  <img src="./img/avatar3.jpg" alt="" class="coments__avatar" />
+              <li class="coments__swither-item">
+                <a href="#" class="coments__swither-link" data-open="three">
+                  <img src="./img/avatar3.jpg" alt="" class="coments__swither-avatar" />
                 </a>
               </li>
             </ul>
@@ -289,11 +593,6 @@
                     <svg class="footer__phone-icon phone-icon">
                       <use xlink:href="./sprite.svg#phone"></use>
                     </svg>
-                    <!-- <img
-                      src="./img/icon/phone.svg"
-                      class="phone-number__icon-elem footer-icon-elem"
-                      alt="phone"
-                    /> -->
                   </span>
                   <span class="phone-number__text">8 800 903 90 90</span>
                 </a>
@@ -352,5 +651,15 @@
         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
+    <a href="" class="burger">
+      <span class="burger__plank"></span>
+      <span class="burger__plank"></span>
+      <span class="burger__plank"></span>
+    </a>
   </body>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="scripts/burger.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/team.js"></script>
+  <script src="scripts/tabs.js"></script>
 </html>
