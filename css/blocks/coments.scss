@@ -1,5 +1,8 @@
 // отзывы
 .coments {
+  // position: relative; 
+  // top: 0;
+  // left: 0;
     &__body {
     background: #f8faf9;
     margin-bottom: rem(15px);
@@ -78,7 +81,7 @@
     height: rem(74px);
   }
   .coments__swither-item {
-     position: relative;
+    position: relative;
     margin-right: rem(6px);
     overflow: hidden;
     width: rem(80px);

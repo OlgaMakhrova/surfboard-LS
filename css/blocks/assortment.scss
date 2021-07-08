@@ -40,7 +40,7 @@
 }
 .assortment__item {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-shrink: 0;
   width: 100%;
   @include tablets{
@@ -51,10 +51,10 @@
 
 .assortment__img {
   flex-shrink: 0;
-  margin-right: 0;
+  margin-right: 80px;
   padding-top: rem(70px);
   width: 43%;
-  background: url(./img/grey.png) center no-repeat;
+  
   @include tablets{
     margin-bottom: 40px;
     width: 44%;
@@ -63,19 +63,14 @@
     width: 55%;
   }
 }
-.greyspot{
-  display: block;
-  width: 396px;
-  height: 378px;
-  
-}
+ 
 .assortment__content {
   width: 45%;
   @include tablets{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-end;
     width: 85%;
   }
   @include phones{

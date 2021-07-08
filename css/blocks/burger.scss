@@ -1,19 +1,19 @@
 .burger{
+  display: none;
+  
+  @include tablets{
   position: absolute;
   top: 25px;
   right: 10%;
   cursor: pointer;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 26px;
   height: 25px;
   z-index: 15;
-  transition: all 0.4s;
-  @include tablets{
-     display: inline-flex;
-    //  margin-right: rem(15px);
-   }
+  transition: all 0.3s;
+  }
 
   &__plank{
     display: block;
@@ -23,15 +23,15 @@
     border-radius: 10px;
   }
 }
-.burger:active .burger__plank:nth-child(1){
+ 
+.burger._active .burger__plank:nth-child(1){
  opacity: 0;
 }
-.burger:active .burger__plank:nth-child(2){
+.burger._active .burger__plank:nth-child(2){
  transform: rotate(45deg);
 }
-.burger:active .burger__plank:nth-child(3){
+.burger._active .burger__plank:nth-child(3){
  transform: rotate(-45deg) translateY(-7px) translateX(7px);
    
 }
- 
  

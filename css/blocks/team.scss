@@ -1,52 +1,94 @@
-.team {
+.team-section {
   text-align: center;
 }
 .container {
 }
-.section__title {
+.title {
+display: flex;
+justify-content: space-between;
+
 }
 .team__title {
    margin-bottom: 50px;
   
 }
-.team__list {
+.team {
   display: flex;
-  margin-bottom: 60px;
-   
+  justify-content: space-between;
+  @include tablets{
+    display: none;
+  }
+}  
+.team-version-desktop .team__content{
+  position: absolute;
+  top: 100%;
+  
+}  
+.team-version-mobile{
+  display: none;
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+  }
 }
 .team__item {
-}
-.team__photo {
-  margin-right: 20px;
+  position: relative;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-right: rem(20px);
   &:last-child{
     margin-right: 0;
   }
-  width: 220px;
-  height: 290px;
+  min-width: rem(220px);
+  @include tablets{
+    flex: initial;
+    margin-right: 0;
+}  
 
 }
-.team__accordion {
-  
+.team__member {
+margin-bottom: 20px;
+height: 290px;
 }
-.team__accordion-name {
-  display: flex;
-  padding-right: 5px;
+.button{
+  padding: 0;
+  cursor: pointer;
+  border:none;
+ 
+
+} 
+.team__title-name {
+  display: inline-flex;
+  align-items: center;
   font-weight: bold;
-  font-size: 21px;
+  font-size: rem(20px);
   line-height: 1.1;
+  color: #323232;
+   background: #fff;
+  @include tablets{
+    margin-bottom: 20px;
+  }
   
 }
 .team__icon-arrow {
-  display: block;
-  padding-top: 8px;
-  width: 15px;
-  height: 15px;
-  fill: #292929;
+  text-align: center;
+  margin-left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #292929;
 }
-.accordion__wrapper {
-  display: none;
+.team__content {
+  overflow: hidden; 
+  transition: height 0.3s;
+  height: 0;
 }
-.accordion__content {
+.team__content-block {
+  padding-bottom: 5px;
 }
 .team__prof {
 }

@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surfboard</title>
-    <!-- <link rel="stylesheet" href="css/blocks.css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/blocks.css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
@@ -13,9 +18,11 @@
       <div class="container">
         <header class="header">
           <img src="./img/icon/logo.png" alt="surfboard" class="logo" />
-          <!-- <div class="menu__icon">
-            <span></span>
-          </div> -->
+          <div class="burger">
+            <span class="burger__plank"></span>
+            <span class="burger__plank"></span>
+            <span class="burger__plank"></span>
+          </div>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item"><a href="#" class="menu__link"></a> О нас</li>
@@ -30,18 +37,12 @@
           <img />
           <a href="tel:+788009039090" class="phone-number header__phone-number">
             <span class="phone-number__icon">
-              <!-- <img src="./img/icon/phone.svg" class="phone-number__icon-elem" alt="phone" /> -->
               <svg class="header__phone-icon phone-icon">
                 <use xlink:href="./sprite.svg#phone"></use>
               </svg>
             </span>
             <span class="phone-number__text">8 800 903 90 90</span>
           </a>
-          <!-- <a href="" class="burger">
-            <span class="burger__plank"></span>
-            <span class="burger__plank"></span>
-            <span class="burger__plank"></span>
-          </a> -->
         </header>
       </div>
 
@@ -158,24 +159,19 @@
       <section class="assortment">
         <div class="container-assortment">
           <div class="assortment__slider">
+            <!-- arrow -->
             <div class="assortment__controls">
               <a href="#" id="sliderLeft" class="assortment__control assortment__control-left">
                 <img src="./img/icon/sliderleft.svg" class="assortment__control-icon" />
-                <!-- <svg class="assortment__control-icon">
-                  <use xlink:href="./sprite.svg#sliderleft"></use>
-                </svg> -->
               </a>
               <a href="#" id="sliderRight" class="assortment__control assortment__control-right">
                 <img src="./img/icon/sliderright.svg" class="assortment__control-icon" alt="" />
-                <!-- <svg class="assortment__control-icon">
-                  <use xlink:href="./sprite.svg#sliderright"></use>
-                </svg> -->
               </a>
             </div>
             <ul class="assortment__list" id="slider">
               <li class="assortment__item">
                 <div class="assortment__img">
-                  <img src="./img/longboard.png" alt="longboard" />
+                  <img src="./img/longboard1.png" alt="longboard" />
                 </div>
                 <div class="assortment__content">
                   <div class="assortment__composition assortment-composition">
@@ -255,7 +251,7 @@
 
               <li class="assortment__item">
                 <div class="assortment__img">
-                  <img src="./img/shortboard.png" alt="longboard" />
+                  <img src="./img/shortboard2.png" alt="shortboard" />
                 </div>
                 <div class="assortment__content">
                   <div class="assortment__composition assortment-composition">
@@ -337,84 +333,153 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <!-- команда -->
+      <section class="section team-section">
         <div class="container">
           <h2 class="section__title team__title">команда</h2>
-          <ul class="team__list">
+          <ul class="team team-version-desktop">
             <li class="team__item">
-              <div class="team__photo">
-                <img src="./img/teamB.jpg" alt="Boris" />
+              <div class="team__member">
+                <img class="team__member-photo" src="./img/teamB.jpg" alt="Boris" />
               </div>
-              <div class="team__accordion">
-                <a href="#" class="team__accordion-name"
-                  >Борис Федорович
-                  <svg class="team__icon-arrow">
-                    <use xlink:href="./sprite.svg#arrowteam"></use>
-                  </svg>
-                </a>
+              <button class="team__title-name" type="button">
+                Борис Федорович
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrowteam"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__prof">Главный технолог</div>
+                  <div class="team__content-text">Отвечает за материалы и разработку досок</div>
+                </div>
               </div>
-              <div class="accordion__wrapper">
-                <div class="accordion__content">
-                  <span class="team__prof">Главный технолог</span>
-                  <p>Отвечает за материалы и разработку досок</p>
+            </li>
+
+            <li class="team__item">
+              <div class="team__member">
+                <img class="team__member-photo" src="./img/teamO.jpg" alt="Olga" />
+              </div>
+              <button class="team__title-name" type="button">
+                Ольга Невзорова
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrowteam"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__prof">Дизайнер</div>
+                  <div class="team__content-text">Создает дизайн серфбордов</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <div class="team__member">
+                <img class="team__member-photo" src="./img/teamIn.jpg" alt="Invar" />
+              </div>
+              <button class="team__title-name" type="button">
+                Ингвар Нильсон
+                <!-- <img src="./img/icon/arrowteam.svg" class="team__icon-arrow" alt="#" /> -->
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrowteam"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__prof">Спортсмен</div>
+                  <div class="team__content-text">Участвует в разработке серфбордов</div>
                 </div>
               </div>
             </li>
             <li class="team__item">
-              <div class="team__photo">
-                <img src="./img/teamO.jpg" alt="Olga" />
+              <div class="team__member">
+                <img class="team__member-photo" src="./img/teamE.jpg" alt="Ekaterina" />
               </div>
-              <div class="team__accordion">
-                <a href="#" class="team__accordion-name"
-                  >Ольга Невзорова
-                  <svg class="team__icon-arrow">
-                    <use xlink:href="./sprite.svg#arrowteam"></use>
-                  </svg>
-                </a>
+              <button class="team__title-name" type="button">
+                Екатерина Иванова
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrow"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__prof">Тестировщик</div>
+                  <div class="team__content-text">Отвечает за разработку новых продуктов</div>
+                </div>
               </div>
-              <div class="accordion__wrapper">
-                <div class="accordion__content">
-                  <span class="team__prof">Дизайнер</span>
-                  <p>Создает дизайн серфбордов</p>
+            </li>
+          </ul>
+          <!-- mobile-version -->
+          <ul class="team team-version-mobile">
+            <li class="team__item">
+              <button class="team__title-name" type="button">
+                Борис Федорович
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrowteam"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img class="team__member-photo" src="./img/teamB.jpg" alt="Boris" />
+                  </div>
+                  <div class="team__prof">Главный технолог</div>
+                  <div class="team__content-text">Отвечает за материалы и разработку досок</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <button class="team__title-name" type="button">
+                Ольга Невзорова
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrowteam"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img class="team__member-photo" src="./img/teamO.jpg" alt="Olga" />
+                  </div>
+                  <div class="team__prof">Дизайнер</div>
+                  <div class="team__content-text">Создает дизайн серфбордов</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="team__item">
+              <button class="team__title-name" type="button">
+                Ингвар Нильсон
+                <!-- <img src="./img/icon/arrowteam.svg" class="team__icon-arrow" alt="#" /> -->
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrowteam"></use> -->
+                </div>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img class="team__member-photo" src="./img/teamIn.jpg" alt="Invar" />
+                  </div>
+                  <div class="team__prof">Спортсмен</div>
+                  <div class="team__content-text">Участвует в разработке серфбордов</div>
                 </div>
               </div>
             </li>
             <li class="team__item">
-              <div class="team__photo">
-                <img src="./img/teamIn.jpg" alt="Invar" />
-              </div>
-              <div class="team__accordion">
-                <a href="#" class="team__accordion-name"
-                  >Ингвар Нильсон
-                  <img src="./img/icon/arrowteam.svg" class="team__icon-arrow" alt="#" />
-                  <!-- <svg class="team__icon-arrow">
-                    <use xlink:href="./sprite.svg#arrowteam"></use>
-                  </svg> -->
-                </a>
-              </div>
-              <div class="accordion__wrapper">
-                <div class="accordion__content">
-                  <span class="team__prof">Спортсмен</span>
-                  <p>Участвует в разработке серфбордов</p>
+              <button class="team__title-name" type="button">
+                Екатерина Иванова
+                <div class="team__icon-arrow">
+                  <!-- <use xlink:href="./sprite.svg#arrow"></use> -->
                 </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <div class="team__photo">
-                <img src="./img/teamE.jpg" alt="Ekaterina" />
-              </div>
-              <div class="team__accordion">
-                <a href="#" class="team__accordion-name"
-                  >Екатерина Иванова
-                  <svg class="team__icon-arrow">
-                    <use xlink:href="./sprite.svg#arrow"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="accordion__wrapper">
-                <div class="accordion__content">
-                  <span class="team__prof">Тестировщик</span>
-                  <p>Отвечает за разработку новых продуктов</p>
+              </button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img class="team__member-photo" src="./img/teamE.jpg" alt="Ekaterina" />
+                  </div>
+                  <div class="team__prof">Тестировщик</div>
+                  <div class="team__content-text">Отвечает за разработку новых продуктов</div>
                 </div>
               </div>
             </li>
@@ -432,7 +497,7 @@
                   <div class="coments__photo">
                     <img src="./img/photo1.jpg" alt="" class="coments__photo-img" />
                   </div>
-                  <article class="coments__content">
+                  <div class="coments__content">
                     <h3 class="coments__caption caption">Лучший дизайн</h3>
                     <div class="coments__text text">
                       <p>
@@ -444,14 +509,14 @@
                       </p>
                     </div>
                     <div class="coments__signature">Ольга Макарова</div>
-                  </article>
+                  </div>
                 </li>
 
                 <li class="coments__item" data-linked-with="two">
                   <div class="coments__photo">
                     <img src="./img/photo2.jpg" alt="" class="coments__photo-img" />
                   </div>
-                  <article class="coments__content">
+                  <div class="coments__content">
                     <h3 class="coments__caption caption">Нереальная скорость</h3>
                     <div class="coments__text text">
                       <p>
@@ -462,14 +527,14 @@
                       </p>
                     </div>
                     <div class="coments__signature">Марк Брюлов</div>
-                  </article>
+                  </div>
                 </li>
 
                 <li class="coments__item" data-linked-with="three">
                   <div class="coments__photo">
                     <img src="./img/photo3.jpg" alt="" class="coments__photo-img" />
                   </div>
-                  <article class="coments__content">
+                  <div class="coments__content">
                     <h3 class="coments__caption caption">Устойчивость и безопасность</h3>
                     <div class="coments__text text">
                       <p>
@@ -480,7 +545,7 @@
                       </p>
                     </div>
                     <div class="coments__signature">Василий Поперечный</div>
-                  </article>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -510,39 +575,40 @@
           <div class="order-board">
             <h2 class="section__title order-title">закажите доску</h2>
             <form class="form">
+              <input type="hidden" name="to" value="somewhere@mail.com" />
               <div class="form__column">
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__heading heading">Имя</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="name" class="form__input" />
                   </label>
                   <label class="form__block">
                     <div class="form__heading heading">Телефон</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="phone" class="form__input" />
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__heading heading">Улица</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="street" class="form__input" />
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__heading heading">Дом</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="home" class="form__input" />
                   </label>
                   <label class="form__block">
                     <div class="form__heading heading">Корпус</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="part" class="form__input" />
                   </label>
                   <label class="form__block">
                     <div class="form__heading heading">Квартира</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="appartment" class="form__input" />
                   </label>
                   <label class="form__block">
                     <div class="form__heading heading">Этаж</div>
-                    <input type="text" class="form__input" />
+                    <input type="text" name="floor" class="form__input" />
                   </label>
                 </div>
               </div>
@@ -550,7 +616,7 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__heading heading">Комментарий</div>
-                    <textarea class="form__input form__input-textarea"></textarea>
+                    <textarea name="comment" class="form__input form__input-textarea"></textarea>
                   </label>
                 </div>
                 <div class="form__control">
@@ -581,60 +647,72 @@
           </div>
         </div>
       </section>
+      <div id="modal" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <p>Сообщение отправлено</p>
+            <div class="modal__button-container">
+              <a href="#" class="btn app-submit-btn">Закрыть</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="section map-section">
-        <footer class="footer">
-          <div class="footer__row">
+        <div id="map"></div>
+      </section>
+      <footer class="footer">
+        <div class="footer__row">
+          <div class="footer__column">
+            <div class="footer__address">
+              <div class="footer__address-item">Москва, ул.Новый Арбат, д.31/12</div>
+              <img />
+              <a href="tel:+788009039090" class="phone-number footer__phone-number">
+                <span class="phone-number__icon">
+                  <svg class="footer__phone-icon phone-icon">
+                    <use xlink:href="./sprite.svg#phone"></use>
+                  </svg>
+                </span>
+                <span class="phone-number__text">8 800 903 90 90</span>
+              </a>
+            </div>
             <div class="footer__column">
-              <div class="footer__address">
-                <div class="footer__address-item">Москва, ул.Новый Арбат, д.31/12</div>
-                <img />
-                <a href="tel:+788009039090" class="phone-number footer__phone-number">
-                  <span class="phone-number__icon">
-                    <svg class="footer__phone-icon phone-icon">
-                      <use xlink:href="./sprite.svg#phone"></use>
-                    </svg>
-                  </span>
-                  <span class="phone-number__text">8 800 903 90 90</span>
-                </a>
-              </div>
-              <div class="footer__column">
-                <div class="social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a href="" class="social__link">
-                        <svg class="social-icon social-vk">
-                          <use xlink:href="./sprite.svg#vk"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link">
-                        <svg class="social-icon social-fb">
-                          <use xlink:href="./sprite.svg#fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link">
-                        <svg class="social-icon social-in">
-                          <use xlink:href="./sprite.svg#in"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link">
-                        <svg class="social-icon social-tw">
-                          <use xlink:href="./sprite.svg#tw"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <svg class="social-icon social-vk">
+                        <use xlink:href="./sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <svg class="social-icon social-fb">
+                        <use xlink:href="./sprite.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <svg class="social-icon social-in">
+                        <use xlink:href="./sprite.svg#in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <svg class="social-icon social-tw">
+                        <use xlink:href="./sprite.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </footer>
-      </section>
+        </div>
+      </footer>
+      <!-- </section> -->
     </div>
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
@@ -651,15 +729,15 @@
         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
-    <a href="" class="burger">
-      <span class="burger__plank"></span>
-      <span class="burger__plank"></span>
-      <span class="burger__plank"></span>
-    </a>
   </body>
-  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="scripts/burger.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/team.js"></script>
   <script src="scripts/tabs.js"></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/map.js"></script>
 </html>
